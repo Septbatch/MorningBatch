@@ -13,6 +13,7 @@
           <include name="launchUrl"/>
           <include name="logOut"/>
           <include name="assignLeave"/>
+          <include name="properitesReader"/>
         </methods>
       </class> <!-- com.automationframework.testngsession.OrangeHrmLoginTest -->
     </classes>

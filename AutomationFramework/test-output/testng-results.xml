@@ -2,24 +2,28 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-22T09:37:30 IST" name="Default suite" finished-at="2022-11-22T09:37:54 IST" duration-ms="24663">
+  <suite started-at="2022-11-25T09:49:37 IST" name="Default suite" finished-at="2022-11-25T09:50:00 IST" duration-ms="23104">
     <groups>
     </groups>
-    <test started-at="2022-11-22T09:37:30 IST" name="Default test" finished-at="2022-11-22T09:37:54 IST" duration-ms="24663">
+    <test started-at="2022-11-25T09:49:37 IST" name="Default test" finished-at="2022-11-25T09:50:00 IST" duration-ms="23104">
       <class name="com.automationframework.testngsession.OrangeHrmLoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:30 IST" name="setUp" finished-at="2022-11-22T09:37:32 IST" duration-ms="2259" status="PASS">
+        <test-method is-config="true" signature="properitesReader()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:37 IST" name="properitesReader" finished-at="2022-11-25T09:49:37 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- properitesReader -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:37 IST" name="setUp" finished-at="2022-11-25T09:49:40 IST" duration-ms="3285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:32 IST" name="launchUrl" finished-at="2022-11-22T09:37:36 IST" duration-ms="4425" status="PASS">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:40 IST" name="launchUrl" finished-at="2022-11-25T09:49:43 IST" duration-ms="2600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:36 IST" name="loginOrangeHrm" finished-at="2022-11-22T09:37:37 IST" duration-ms="771" status="PASS">
+        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:43 IST" name="loginOrangeHrm" finished-at="2022-11-25T09:49:43 IST" duration-ms="622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginOrangeHrm -->
-        <test-method signature="assignLeave()[pri:1, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:37 IST" name="assignLeave" finished-at="2022-11-22T09:37:42 IST" duration-ms="5358" status="FAIL">
+        <test-method signature="assignLeave()[pri:1, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:43 IST" name="assignLeave" finished-at="2022-11-25T09:49:49 IST" duration-ms="5424" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [https://opensource-demo.orangehrmlive.com/web/index.php/leave/assignLeave] but found [https://opensource-demo.orangehrmlive.com/web/index.php/leave/assign]]]>
@@ -32,7 +36,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.automationframework.testngsession.OrangeHrmLoginTest.assignLeave(OrangeHrmLoginTest.java:67)
+at com.automationframework.testngsession.OrangeHrmLoginTest.assignLeave(OrangeHrmLoginTest.java:88)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,72 +71,72 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignLeave -->
-        <test-method is-config="true" signature="captureFailedCase(org.testng.ITestResult)[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:42 IST" name="captureFailedCase" finished-at="2022-11-22T09:37:43 IST" duration-ms="264" status="PASS">
+        <test-method is-config="true" signature="captureFailedCase(org.testng.ITestResult)[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:49 IST" name="captureFailedCase" finished-at="2022-11-25T09:49:49 IST" duration-ms="199" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=assignLeave status=FAILURE method=OrangeHrmLoginTest.assignLeave()[pri:1, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1] output={null}]]]>
+                <![CDATA[[TestResult name=assignLeave status=FAILURE method=OrangeHrmLoginTest.assignLeave()[pri:1, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailedCase -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:43 IST" name="logOut" finished-at="2022-11-22T09:37:44 IST" duration-ms="957" status="PASS">
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:49 IST" name="logOut" finished-at="2022-11-25T09:49:50 IST" duration-ms="790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:44 IST" name="loginOrangeHrm" finished-at="2022-11-22T09:37:44 IST" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:50 IST" name="loginOrangeHrm" finished-at="2022-11-25T09:49:50 IST" duration-ms="517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginOrangeHrm -->
-        <test-method signature="adminNavigate()[pri:2, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:44 IST" name="adminNavigate" finished-at="2022-11-22T09:37:47 IST" duration-ms="3126" status="PASS">
+        <test-method signature="adminNavigate()[pri:2, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:50 IST" name="adminNavigate" finished-at="2022-11-25T09:49:53 IST" duration-ms="2970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminNavigate -->
-        <test-method is-config="true" signature="captureFailedCase(org.testng.ITestResult)[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:47 IST" name="captureFailedCase" finished-at="2022-11-22T09:37:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:53 IST" name="logOut" finished-at="2022-11-25T09:49:54 IST" duration-ms="832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="captureFailedCase(org.testng.ITestResult)[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:53 IST" name="captureFailedCase" finished-at="2022-11-25T09:49:53 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=adminNavigate status=SUCCESS method=OrangeHrmLoginTest.adminNavigate()[pri:2, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1] output={null}]]]>
+                <![CDATA[[TestResult name=adminNavigate status=SUCCESS method=OrangeHrmLoginTest.adminNavigate()[pri:2, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailedCase -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:47 IST" name="logOut" finished-at="2022-11-22T09:37:48 IST" duration-ms="834" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:48 IST" name="loginOrangeHrm" finished-at="2022-11-22T09:37:49 IST" duration-ms="507" status="PASS">
+        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:54 IST" name="loginOrangeHrm" finished-at="2022-11-25T09:49:55 IST" duration-ms="552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginOrangeHrm -->
-        <test-method signature="myInformation()[pri:3, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:49 IST" name="myInformation" finished-at="2022-11-22T09:37:52 IST" duration-ms="3630" status="PASS">
+        <test-method signature="myInformation()[pri:3, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:55 IST" name="myInformation" finished-at="2022-11-25T09:49:58 IST" duration-ms="3228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myInformation -->
-        <test-method is-config="true" signature="captureFailedCase(org.testng.ITestResult)[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:52 IST" name="captureFailedCase" finished-at="2022-11-22T09:37:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:58 IST" name="logOut" finished-at="2022-11-25T09:50:00 IST" duration-ms="1703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="captureFailedCase(org.testng.ITestResult)[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:58 IST" name="captureFailedCase" finished-at="2022-11-25T09:49:58 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=myInformation status=SUCCESS method=OrangeHrmLoginTest.myInformation()[pri:3, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1] output={null}]]]>
+                <![CDATA[[TestResult name=myInformation status=SUCCESS method=OrangeHrmLoginTest.myInformation()[pri:3, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailedCase -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:52 IST" name="logOut" finished-at="2022-11-22T09:37:54 IST" duration-ms="1822" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:54 IST" name="closeBrowser" finished-at="2022-11-22T09:37:54 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:50:00 IST" name="closeBrowser" finished-at="2022-11-25T09:50:00 IST" duration-ms="327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="reportGenearte()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@53fdffa1]" started-at="2022-11-22T09:37:54 IST" name="reportGenearte" finished-at="2022-11-22T09:37:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="reportGenearte()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:50:00 IST" name="reportGenearte" finished-at="2022-11-25T09:50:00 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportGenearte -->

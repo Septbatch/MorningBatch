@@ -1,7 +1,11 @@
 package com.automationframework.testngsession;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -19,6 +23,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -26,6 +31,19 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class OrangeHrmLoginTest {
 	WebDriver driver;
+
+	Properties pr;
+
+	@BeforeSuite
+	public void properitesReader() throws IOException {
+		String projectLocation = System.getProperty("user.dir"); // This line will get project location.
+		String filelocation = projectLocation + "\\config.properties";
+		File fi = new File(filelocation);
+		BufferedReader reader = new BufferedReader(new FileReader(fi));
+
+		pr = new Properties();
+		pr.load(reader);
+	}
 
 	@BeforeTest
 	public void setUp() {
@@ -38,14 +56,17 @@ public class OrangeHrmLoginTest {
 
 	@BeforeClass
 	public void launchUrl() {
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		String applicaitonurl = pr.getProperty("url");
+		driver.get(applicaitonurl);
 	}
 
 	@BeforeMethod
 	public void loginOrangeHrm() throws InterruptedException {
+		String username = pr.getProperty("username");
+		String password = pr.getProperty("password");
 
-		driver.findElement(By.name("username")).sendKeys("Admin");
-		driver.findElement(By.name("password")).sendKeys("admin123");
+		driver.findElement(By.name("username")).sendKeys(username);
+		driver.findElement(By.name("password")).sendKeys(password);
 
 		driver.findElement(By.cssSelector("button.oxd-button")).click();
 
