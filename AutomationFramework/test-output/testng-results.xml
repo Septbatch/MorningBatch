@@ -1,48 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-25T09:49:37 IST" name="Default suite" finished-at="2022-11-25T09:50:00 IST" duration-ms="23104">
+  <suite started-at="2022-11-26T10:36:51 IST" name="Default suite" finished-at="2022-11-26T10:38:19 IST" duration-ms="87567">
     <groups>
     </groups>
-    <test started-at="2022-11-25T09:49:37 IST" name="Default test" finished-at="2022-11-25T09:50:00 IST" duration-ms="23104">
-      <class name="com.automationframework.testngsession.OrangeHrmLoginTest">
-        <test-method is-config="true" signature="properitesReader()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:37 IST" name="properitesReader" finished-at="2022-11-25T09:49:37 IST" duration-ms="17" status="PASS">
+    <test started-at="2022-11-26T10:36:51 IST" name="Default test" finished-at="2022-11-26T10:38:19 IST" duration-ms="87567">
+      <class name="com.automationframework.testngsession.OrangeHrmEmpDataSetUp">
+        <test-method is-config="true" signature="properitesReader()[pri:0, instance:com.automationframework.testngsession.OrangeHrmEmpDataSetUp@7bd4937b]" started-at="2022-11-26T10:36:51 IST" name="properitesReader" finished-at="2022-11-26T10:36:51 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- properitesReader -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:37 IST" name="setUp" finished-at="2022-11-25T09:49:40 IST" duration-ms="3285" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationframework.testngsession.OrangeHrmEmpDataSetUp@7bd4937b]" started-at="2022-11-26T10:36:51 IST" name="setUp" finished-at="2022-11-26T10:36:54 IST" duration-ms="2353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:40 IST" name="launchUrl" finished-at="2022-11-25T09:49:43 IST" duration-ms="2600" status="PASS">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:com.automationframework.testngsession.OrangeHrmEmpDataSetUp@7bd4937b]" started-at="2022-11-26T10:36:54 IST" name="launchUrl" finished-at="2022-11-26T10:38:19 IST" duration-ms="85102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:43 IST" name="loginOrangeHrm" finished-at="2022-11-25T09:49:43 IST" duration-ms="622" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginOrangeHrm -->
-        <test-method signature="assignLeave()[pri:1, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:43 IST" name="assignLeave" finished-at="2022-11-25T09:49:49 IST" duration-ms="5424" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmEmpDataSetUp@7bd4937b]" started-at="2022-11-26T10:38:19 IST" name="loginOrangeHrm" finished-at="2022-11-26T10:38:19 IST" duration-ms="23" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/web/index.php/leave/assignLeave] but found [https://opensource-demo.orangehrmlive.com/web/index.php/leave/assign]]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MADEM', ip: '192.168.0.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\gurum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2849caa690d1bf05aa1fc8709493525
+*** Element info: {Using=name, value=username}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/leave/assignLeave] but found [https://opensource-demo.orangehrmlive.com/web/index.php/leave/assign]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.automationframework.testngsession.OrangeHrmLoginTest.assignLeave(OrangeHrmLoginTest.java:88)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MADEM', ip: '192.168.0.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\gurum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2849caa690d1bf05aa1fc8709493525
+*** Element info: {Using=name, value=username}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:397)
+at org.openqa.selenium.By$ByName.findElement(By.java:303)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at com.automationframework.testngsession.OrangeHrmEmpDataSetUp.loginOrangeHrm(OrangeHrmEmpDataSetUp.java:79)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -67,80 +92,225 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assignLeave -->
-        <test-method is-config="true" signature="captureFailedCase(org.testng.ITestResult)[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:49 IST" name="captureFailedCase" finished-at="2022-11-25T09:49:49 IST" duration-ms="199" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=assignLeave status=FAILURE method=OrangeHrmLoginTest.assignLeave()[pri:1, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureFailedCase -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:49 IST" name="logOut" finished-at="2022-11-25T09:49:50 IST" duration-ms="790" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:50 IST" name="loginOrangeHrm" finished-at="2022-11-25T09:49:50 IST" duration-ms="517" status="PASS">
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginOrangeHrm -->
-        <test-method signature="adminNavigate()[pri:2, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:50 IST" name="adminNavigate" finished-at="2022-11-25T09:49:53 IST" duration-ms="2970" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminNavigate -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:53 IST" name="logOut" finished-at="2022-11-25T09:49:54 IST" duration-ms="832" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="captureFailedCase(org.testng.ITestResult)[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:53 IST" name="captureFailedCase" finished-at="2022-11-25T09:49:53 IST" duration-ms="0" status="PASS">
+        <test-method signature="addEmpdata(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.automationframework.testngsession.OrangeHrmEmpDataSetUp@7bd4937b]" started-at="2022-11-26T10:38:19 IST" name="addEmpdata" data-provider="empdata" finished-at="2022-11-26T10:38:19 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=adminNavigate status=SUCCESS method=OrangeHrmLoginTest.adminNavigate()[pri:2, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b] output={null}]]]>
+                <![CDATA[Ram]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sitha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ramanayam]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20455]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MADEM', ip: '192.168.0.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\gurum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2849caa690d1bf05aa1fc8709493525
+*** Element info: {Using=name, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MADEM', ip: '192.168.0.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\gurum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2849caa690d1bf05aa1fc8709493525
+*** Element info: {Using=name, value=username}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:397)
+at org.openqa.selenium.By$ByName.findElement(By.java:303)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at com.automationframework.testngsession.OrangeHrmEmpDataSetUp.loginOrangeHrm(OrangeHrmEmpDataSetUp.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureFailedCase -->
-        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:54 IST" name="loginOrangeHrm" finished-at="2022-11-25T09:49:55 IST" duration-ms="552" status="PASS">
+        </test-method> <!-- addEmpdata -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmEmpDataSetUp@7bd4937b]" started-at="2022-11-26T10:38:19 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1669439299419" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="loginOrangeHrm()[pri:0, instance:com.automationframework.testngsession.OrangeHrmEmpDataSetUp@7bd4937b]" started-at="2022-11-26T10:38:19 IST" name="loginOrangeHrm" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1669439299421" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginOrangeHrm -->
-        <test-method signature="myInformation()[pri:3, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:55 IST" name="myInformation" finished-at="2022-11-25T09:49:58 IST" duration-ms="3228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myInformation -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:58 IST" name="logOut" finished-at="2022-11-25T09:50:00 IST" duration-ms="1703" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="captureFailedCase(org.testng.ITestResult)[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:49:58 IST" name="captureFailedCase" finished-at="2022-11-25T09:49:58 IST" duration-ms="0" status="PASS">
+        <test-method signature="addEmpdata(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.automationframework.testngsession.OrangeHrmEmpDataSetUp@7bd4937b]" started-at="2022-11-26T10:38:19 IST" name="addEmpdata" data-provider="empdata" finished-at="2022-11-26T10:38:19 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=myInformation status=SUCCESS method=OrangeHrmLoginTest.myInformation()[pri:3, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b] output={null}]]]>
+                <![CDATA[Krishna]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sathya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gokulam]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20466]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MADEM', ip: '192.168.0.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\gurum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2849caa690d1bf05aa1fc8709493525
+*** Element info: {Using=name, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MADEM', ip: '192.168.0.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\gurum\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b2849caa690d1bf05aa1fc8709493525
+*** Element info: {Using=name, value=username}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:397)
+at org.openqa.selenium.By$ByName.findElement(By.java:303)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at com.automationframework.testngsession.OrangeHrmEmpDataSetUp.loginOrangeHrm(OrangeHrmEmpDataSetUp.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureFailedCase -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:50:00 IST" name="closeBrowser" finished-at="2022-11-25T09:50:00 IST" duration-ms="327" status="PASS">
+        </test-method> <!-- addEmpdata -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:com.automationframework.testngsession.OrangeHrmEmpDataSetUp@7bd4937b]" started-at="2022-11-26T10:38:19 IST" name="logOut" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1669439299428" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="reportGenearte()[pri:0, instance:com.automationframework.testngsession.OrangeHrmLoginTest@56cdfb3b]" started-at="2022-11-25T09:50:00 IST" name="reportGenearte" finished-at="2022-11-25T09:50:00 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationframework.testngsession.OrangeHrmEmpDataSetUp@7bd4937b]" started-at="2022-11-26T10:38:19 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1669439299436" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reportGenearte -->
-      </class> <!-- com.automationframework.testngsession.OrangeHrmLoginTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationframework.testngsession.OrangeHrmEmpDataSetUp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

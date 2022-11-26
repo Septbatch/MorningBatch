@@ -3,19 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationframework.testngsession.OrangeHrmLoginTest">
+      <class name="com.automationframework.testngsession.OrangeHrmEmpDataSetUp">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="reportGenearte"/>
-          <include name="setUp"/>
-          <include name="captureFailedCase"/>
-          <include name="loginOrangeHrm"/>
+          <include name="addEmpdata"/>
+          <include name="tearDown"/>
           <include name="launchUrl"/>
-          <include name="logOut"/>
-          <include name="assignLeave"/>
+          <include name="setUp"/>
           <include name="properitesReader"/>
+          <include name="logOut"/>
+          <include name="loginOrangeHrm"/>
         </methods>
-      </class> <!-- com.automationframework.testngsession.OrangeHrmLoginTest -->
+      </class> <!-- com.automationframework.testngsession.OrangeHrmEmpDataSetUp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
